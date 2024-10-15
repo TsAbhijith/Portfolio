@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Aboutme.css">
+    <title>About me</title>
+</head>
+<body>
+    <nav id="myTopnav" class="topnav">        
+        <img class="logo" src="image.png" alt="Logo">
+        <div class="menu">
+            <a href="port.html">Home</a>
+            <a href="Myprojects.html">My Projects</a>
+        </div>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><img id="mn" src="menu.png" alt="menu"></a>
+    </nav>
+    <H1>Coming Soon<span id="element"></span> </H1>
+
+
+    <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }</script>
+    
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ["..."],
+              typeSpeed: 120,
+              backSpeed:100,
+              loop:true
+            });
+          </script>
+</body>
+</html>
