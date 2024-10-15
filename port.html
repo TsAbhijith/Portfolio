@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Portfolio</title>
+    
+</head>
+<body>
+    <nav id="myTopnav" class="topnav">        
+        <img class="logo" src="image.png" alt="Logo">
+        <div class="menu">
+            <a href="Aboutme.html">About Me</a>
+            <a href="Myprojects.html">My Projects</a>
+        </div>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><img id="mn" src="menu.png" alt="menu"></a>
+    </nav>
+    <section>
+        <H1>Hello, I'm <br><span id="element"></span></H1>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
+        <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/gPGZ3rOieHwNmKDO/scene.splinecode"></spline-viewer>
+    </section>
+
+    <footer>
+        <h4>
+            Made by Abhijith Biji
+        </h4>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["Abhijith Biji","a Student","a Coder","a Web-Designer"],
+          typeSpeed: 120,
+          backSpeed:100,
+          loop:true
+        });
+      </script>
+</body>
+</html>
